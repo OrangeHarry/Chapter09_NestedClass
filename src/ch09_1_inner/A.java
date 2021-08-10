@@ -8,21 +8,22 @@ public class A {
 		System.out.println("A 객체가 생성됨");
 	}
 
-	// 인스턴스멤버 클래스
+// 인스턴스멤버 클래스
 	class B {
 		// 필드
 		int field1;
-//		static field2;
+//		static field2; //인스턴스 멤버에는 static이 올수가 없지...static은 new가 아니라 그냥 여러번 쓸 수 있으니깐!!
 		// 생성자
 		B() {
 			System.out.println("B 객체가 생성됨");
 		}
 
 		// 메소드
-		void method1() {}
+		void method1() {
+		}
 //		static void method2() {}
 	}
-	
+
 	// 정적멤버 클래스
 	static class C {
 		// 필드
@@ -35,8 +36,11 @@ public class A {
 		}
 
 		// 메소드
-		void method1() {}
-		static void method2() {}
+		void method1() {
+		}
+
+		static void method2() {
+		}
 	}
 
 	// A메소드
@@ -45,13 +49,16 @@ public class A {
 		class D {
 			// 필드
 			int field1;
+
 			// static int field2;
 			// 생성자
 			D() {
 				System.out.println("D 객체가 생성됨");
 			}
+
 			// 메소드
-			void method1() {}
+			void method1() {
+			}
 //			static void method2() {}
 		}
 		D d = new D();
