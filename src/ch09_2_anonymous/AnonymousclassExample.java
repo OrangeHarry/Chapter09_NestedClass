@@ -1,6 +1,6 @@
 package ch09_2_anonymous;
 
-public class AnonymousExample {
+public class AnonymousclassExample {
 	public static void main(String[] args) {
 		Anonymous anony = new Anonymous();
 		// 익명객체 필드 사용
@@ -22,7 +22,6 @@ public class AnonymousExample {
 				System.out.println("8시에 일어납니다.");
 				study();
 			}
-		}
-	  );
+		});
 	}
 }
